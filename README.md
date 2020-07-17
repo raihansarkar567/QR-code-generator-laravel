@@ -21,7 +21,7 @@
    
 3) Route and function (you can use the function on cotroller also)
     Route::get('simple-qr-code', function () {
-       return QrCode::size(200)->generate('W3Adda Laravel Tutorial');
+       return QrCode::size(200)->generate('Laravel Tutorial');
   });
   
 4)Create View file
@@ -35,12 +35,12 @@
 </head>
 <body>
 <div class="container">
-<h2>Laravel 5.8 Generate QR Code Tutorial with Example</h2>
+<h3>Laravel 5.8 Generate QR Code Tutorial with Example</h3>
 <br>
 <br>
     <div class="row">
 			<div class="col-md-4">
-				    <h5>Simple Qr Code With String</h5>
+				    <h4>Simple Qr Code With String</h4>
     {!! QrCode::size(200)->generate('Laravel Tutorial'); !!}
 			</div>
 
